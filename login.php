@@ -1,10 +1,10 @@
 <?php
-session_start(); 
+session_start();
 if (isset($_POST['login']))
 {
 	$mobile=$_POST ['session'];
 	$_SESSION['userid'] = $mobile;
-	
+
   	header ('location: index.php');
 }
 
@@ -17,6 +17,7 @@ if (isset($_POST['login']))
 	<title>Login</title>
 </head>
 <body>
+	<h1>Login to App</h1>
 	<form action="login.php" method="post">
 		<input type="text" name="session">
 		<input type="submit" value="login" name="login">
