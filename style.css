@@ -1,0 +1,534 @@
+.header {
+	height: 70px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: gray;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	color: #2D1414;
+}
+.header a {
+	color: white;
+}
+.header a:hover {
+	color: black;
+}
+#update-massage {
+	font-size: 15px;
+	color: white;
+	font-weight: 500;
+}
+#update-image {
+	height: 50px;
+}
+.search {
+	
+}
+.search input {
+	width: 300px;
+	align-self: center;
+}
+#search-result {
+	
+}
+.header ul {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+}
+.header li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+.main-container {
+	width: 100%;
+	background-color: #302121;
+	display: flex;
+	flex-direction: row;
+}
+.main-container h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+.right-card-container {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	background-color: black;
+	margin-top: 20px;
+	height: 80vh;
+	position: sticky;
+	top: 90px;
+	/*overflow-y: scroll;*/
+}
+.right-card-container .suggesion-card {
+	height: 50%;
+	background-color: #7B4F81;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	box-shadow: 4px 5px 5px grey;
+}
+.right-card-container .story-card {
+	height: 50%;
+	background-color: #7B4F81;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	box-shadow: 4px 5px 5px grey;
+}
+
+.story-card #myStoryImage {
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+}
+
+/*********************************************************************************/
+.left-card-container {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	background-color: black;
+	margin-top: 20px;
+	height: 80vh;
+	position: sticky;
+	top: 90px;
+	/*overflow-y: scroll;*/
+}
+.left-card-container .massage-card {
+	height: 50%;
+	background-color: #7B4F81;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	box-shadow: 4px 5px 5px grey;
+}
+.left-card-container .online-card {
+	height: 50%;
+	background-color: #7B4F81;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	box-shadow: 4px 5px 5px grey;
+}
+/*********************************************************************************/
+
+.online-card-header, .massage-card-header, .story-card-header, .suggession-card-header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 7px;
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	/*align-items: center;*/
+	justify-content: space-between;
+}
+
+/****************************************/
+
+.post-container {
+	width: 40%;
+	margin-top: 20px;
+}
+
+.post {
+	background-color: pink;
+}
+.post-header {
+	height: 50px;
+	background-color: #4F5B81;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.post-header img {
+	height: 40px;
+	width: 40px;
+}
+.post-body {
+	background-color: gray;
+}
+.h-10 {
+	max-height: 500px;
+}
+.post-img {
+	text-align: center;
+	/*width: 95%;*/
+}
+.post-footer {
+	display: flex;
+	flex-direction: row;
+}
+.post-footer .like, .comment, .share {
+	width: 33.33%;
+	box-sizing: border-box;
+	/*background-color: black;*/
+	/*color: white;*/
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.post-body {
+	background-color: #E5E5E5;
+}
+
+/* Modal Modification */
+.modal-header {
+	background-color: #153F7E;
+	color: white;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.model-content {
+	height: 50px;
+	/*background-color: #4F5B81;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.model-content img {
+	height: 40px;
+	width: 40px;
+}
+
+.request-modal-content {
+	height: 50px;
+	/*background-color: #4F5B81;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.request-modal-content .modal-img {
+	width: 70%;
+}
+
+.request-modal-content img {
+	height: 40px;
+	width: 40px;
+}
+
+.request-modal-content span {
+	font-size: 20px;
+}
+
+.request-modal-content .modal-btn {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.request-modal-content .modal-btn a {
+	color: red;
+	float: right;
+}
+
+/*********************************************************/
+.online-modal-content {
+	height: 50px;
+	/*background-color: #4F5B81;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.online-modal-content .modal-img {
+	width: 70%;
+}
+
+.online-modal-content img {
+	height: 40px;
+	width: 40px;
+}
+
+.online-modal-content span {
+	font-size: 20px;
+}
+
+.online-modal-content .modal-btn {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.online-modal-content .modal-btn a {
+	color: red;
+	float: right;
+}
+
+/********************************************************/
+.massage-modal-content {
+	min-height: 50px;
+	/*background-color: #4F5B81;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.massage-modal-content .modal-img {
+	/*width: 30%;*/
+}
+
+.massage-modal-content .modal-img img {
+	height: 40px;
+	width: 40px;
+}
+
+.massage-modal-content .modal-msg {
+	/*display: flex;
+	flex-direction: column;	*/
+	/*width: 50%;*/
+	align-self: flex-start;
+}
+
+.massage-modal-content .msg-sender-name {
+	font-size: 15px;
+}
+
+.massage-modal-content .msg-text {
+	font-size: 12px;
+	color: lightgray;
+}
+
+.massage-modal-content .modal-badge {
+	/*width: 20%;*/
+	text-align: right;
+	padding-right: 7px;
+	/*display: flex;
+	flex-direction: row;
+	align-items: flex-end;*/
+}
+
+.massage-modal-content .modal-btn a {
+	color: red;
+	float: right;
+}
+
+.massage-modal-content .msg-badge {
+	align-self: center;
+	text-align: right;
+}
+
+
+
+/******************************************************/
+#status-viewer-container {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: lightgray;
+	/*opacity: 0.20;*/
+	display: none;
+	flex-direction: row;
+	justify-content: center;
+}
+#status-viewer {
+	width: 50vw;
+	height: 100vh;
+	background-color: black;
+}
+.story-header {
+	height: 50px;
+	background-color: #4F5B81;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.story-header img {
+	height: 40px;
+	width: 40px;
+}
+.story-body {
+	color: white;
+}
+.story-image {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+.story-image img {
+	height: 70vh;
+	background-color: orange;
+}
+.story-description {
+	/*height: 30vh;*/
+	/*background-color: pink;*/
+	text-align: center;
+	font-size: 20px;
+}
+
+.hr {
+	height: 1px;
+	border: 1px solid white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.left-button-container {
+	position: fixed;
+	top: 40%;
+	bottom: 40%;
+	left: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 6.0em;
+}
+.right-button-container {
+	position: fixed;
+	top: 40%;
+	bottom: 40%;
+	right: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 6.0em;
+}
+
+.close-btn {
+	position: fixed;
+	top: 5px;
+	right: 20%;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: flex-end;*/
+	font-size: 2.0em;
+}
+
+.hover-arrow:hover {
+	cursor: context-menu;
+	background-color: #695A90;
+}
+
+.move-right {
+	/*align-self: flex-end;*/
+	/*display: flex;
+	align-content: flex-end;
+	background-color: red;
+	color: pink;*/
+}
+
+/************************************************************/
+.massage-box h1, h5 {
+	margin: 0;
+	padding: 0;
+}
+.massage-box {
+	width: 270px;
+	background-color: red;
+	color: white;
+	position: fixed;
+	top: 100px;
+	left: 50px;
+	border: 2px solid green;
+}
+.massage-box-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	font-size: 22px;
+	background-color: lightgray;
+	color: black;
+	cursor: move;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.massage-box-header img {
+	width: 22px;
+	height: 22px;
+	border-radius: 30px;
+}
+
+.massage-box-header h5 {
+	font-size: 15px;
+}
+.massage-box-header a {
+	padding-right: 7px;
+	font-size: 15px;
+}
+.massage-box-body {
+	/*position: inherit;*/
+	height: 300px;
+	background-color: white;
+	color: black;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+}
+.massage-box-footer {
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	padding-top: 10px;
+	border-top: 2px solid green;
+	/*padding-bottom: 10px;*/
+}
+.massage-box-footer .input {
+	display: flex;
+	flex-direction: row;
+}
+.massage-box-footer .input textarea {
+	font-size: 15px;
+}
+.massage-box-footer .input button {
+	background-color: green;
+	color: white;
+}
+.send-msg {
+	padding: 7px;
+	background-color: lightblue;
+	max-width: 180px;
+	margin-left: 53px;
+	margin-top: 10px;
+}
+.recieve-msg {
+	padding: 7px;
+	background-color: lightgreen;
+	max-width: 180px;
+	margin-left: 7px;
+	margin-top: 10px;
+}
+/***********************************************************/
+
+#comment-modal .modal-body {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.comment-content {
+	background-color: lightgray;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 30px;
+	min-height: 50px;
+	color: white;
+}
+
+.comment-sender-name {
+	font-size: 13px;
+	font-weight: 1000;
+	color: #BF3F3F;
+}
+
+.comment-text {
+	font-size: 15px;
+	font-weight: 600;
+	color: #BF7F3F;
+
+}

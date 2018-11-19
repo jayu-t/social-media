@@ -1,0 +1,29 @@
+.fs-tiny {
+	font-size: 10px;
+}
+.fs-small {
+	font-size: 13px;
+}
+.fs-medium {
+	font-size: 18px;
+}
+.fs-large {
+	font-size: 25px;
+}
+.hover-thumb:hover {
+	background-color: lightgray;
+	color: white;
+	cursor: pointer;
+}
+
+.hover-color-green {
+	background-color: white;
+}
+/*
+div .left-content-wl {
+	width: 80%;
+}
+
+div .right-content-w {
+	width: 20%;
+}*/
