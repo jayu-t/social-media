@@ -16,7 +16,7 @@ $_SESSION['msg-box'] = 1;
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="helper.css">	
+	<link rel="stylesheet" href="helper.css">
 
 	<script src="js/posts/post.js"></script>
 	<script src="js/story/story.js"></script>
@@ -37,7 +37,7 @@ $_SESSION['msg-box'] = 1;
 		<?php include 'include/massage-card.php' ?>
 	</div>
 	<!-- End left card container --------------#########################################-->
-	
+
 	<!-- post container ------------------------------------------------------------------>
 	<div class="post-container">
 		<div id="post-container">
@@ -54,7 +54,7 @@ $_SESSION['msg-box'] = 1;
 		<!-- include Stories card -->
 		<?php include 'include/story-card.php' ?>
 		<div class="mt-3"></div>
-		
+
 		<!-- include suggession card -->
 		<?php include 'include/suggesion-card.php' ?>
 	</div>
@@ -69,7 +69,7 @@ $_SESSION['msg-box'] = 1;
 
 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>	
+<script src="js/main.js"></script>
 <script src="js/request/friend-request.js"></script>
 <script src="js/massage.js"></script>
 <script src="js/online.js"></script>
@@ -81,6 +81,6 @@ $_SESSION['msg-box'] = 1;
 	whoIsOnline();
 	getSuggesion();
 </script>
-
+<!--// TODO: Pust to github-->
 </body>
 </html>
