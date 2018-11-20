@@ -16,7 +16,7 @@ echo "<div class='request-modal-content border-bottom border-dark hover-arrow'>
 		  <span class='pl-3'>Jayesh Tajane</span>    
 	    </div>
 	    <div class='modal-btn'>
-	      <a class='btn btn-sm btn-primary' type='button' onclick='sendRequest(this)'>Add</a>
+	      <a class='btn btn-sm btn-primary' type='button' onclick=\"sendRequest(this,'Pranoti/..CVYaa')\">Add</a>
 	    </div>
 	  </div>";
 }

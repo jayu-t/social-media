@@ -9,4 +9,19 @@ function validate_user() {
         header('location: ../../login.php');
 }
 */
+session_start();
+$userid = $_SESSION['userid'];
+$id = $_GET['userid'];
+
+//	This statement can get users from database for comparing the id's
+$query = "delete from request where sender_id='$id' and reciever_id='$userid' ";
+$result = mysqli_query($connect, $query);
+if ($result) 
+{
+	echo "1";
+}
+else
+{
+	echo "0";
+}
 ?>
