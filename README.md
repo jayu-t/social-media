@@ -1,8 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to MY Project 'Social-Media'
 
-You can use the [editor on GitHub](https://github.com/jayu-t/social-media/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In this project i trying to create a social media like facebook and whats app. I'M working on this project more than 40 days. Basically i start this project for testing my problem solving approch.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In developement period i get lot of error. Sometime feels very happy sometimes feel very angry when trying to solve these error. 
+
+But i love error. Because when error comes i understand what is actual problem and 60 to 80% erros solve in some time. 
+But when wrong output comes and i to debug a code. Sometime it solve in very less time time but sometime it takes lot of time.
+Here my observation is error is better than wrong output.
 
 ### Markdown
 
