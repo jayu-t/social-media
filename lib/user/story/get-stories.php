@@ -1,4 +1,15 @@
-<?php 
+<?php
+include '../../connection.php';
+/*
+validate_user();
+$connect = mysqli_connect('localhost', 'root', '', 'test');
+
+function validate_user() {
+    if(!isset($_SESSION['userid']))
+        header('location: ../../login.php');
+}
+*/
+
 /*
 for ($i=0; $i < 10; $i++) { 
 	echo '<div class="post-header border-bottom border-dark">

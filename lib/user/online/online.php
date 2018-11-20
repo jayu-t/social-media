@@ -1,4 +1,15 @@
 <?php 
+include '../../connection.php';
+/*
+validate_user();
+$connect = mysqli_connect('localhost', 'root', '', 'test');
+
+function validate_user() {
+    if(!isset($_SESSION['userid']))
+        header('location: ../../login.php');
+}
+*/
+
 $id = 1;
 for ($i=0; $i < 20; $i++) { 
 $onlineUserId = '917295953'.$id;

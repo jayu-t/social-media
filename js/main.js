@@ -6,7 +6,7 @@ function showRequests() {
 	    	div.innerHTML = this.responseText
 		} 
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/get-request.php", true);
+	xhttp.open("GET", GET_REQUEST, true);
 	xhttp.send();
 }
 
@@ -20,7 +20,7 @@ function showNotifications() {
 	    	//alert(this.responseText);
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/notification/notification.php", true);
+	xhttp.open("GET", NOTIFICATION, true);
 	xhttp.send();
 }
 
@@ -34,7 +34,7 @@ function showMassages() {
 	    	//alert(this.responseText);
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/massage/massage.php", true);
+	xhttp.open("GET", MASSAGE, true);
 	xhttp.send();
 }
 
@@ -47,7 +47,7 @@ function getSuggesion() {
 	    	//alert(this.responseText);
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/suggesion/suggesion.php", true);
+	xhttp.open("GET", SUGGESSION, true);
 	xhttp.send();
 }
 
@@ -60,7 +60,7 @@ function searchName(input) {
 	    	//console.log(input.value);
 		} 
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/search/search-name.php", true);
+	xhttp.open("GET", SEARCH_NAME, true);
 	xhttp.send();
 }
 

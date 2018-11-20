@@ -5,7 +5,7 @@ function acceptRequest(div) {
 			div.remove();
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/accept-request.php", true);
+	xhttp.open("GET", ACCEPT_REQUEST, true);
 	xhttp.send();
 }
 
@@ -16,7 +16,7 @@ function deleteRequest(div) {
 			div.remove();
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/delete-request.php", true);
+	xhttp.open("GET", DELETE_REQUEST, true);
 	xhttp.send();
 }
 
@@ -33,7 +33,7 @@ function sendRequest(button) {
 			button.textContent = "Cancel";
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/send-request.php", true);
+	xhttp.open("GET", SEND_REQUEST, true);
 	xhttp.send();
 }
 
@@ -50,7 +50,7 @@ function cancelRequest(button) {
 			button.textContent = "Add";
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/request/cancel-request.php", true);
+	xhttp.open("GET", CANCEL_REQUEST, true);
 	xhttp.send();
 }
 

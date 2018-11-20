@@ -6,6 +6,6 @@ function whoIsOnline() {
 			div.innerHTML = this.responseText
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/online/online.php", true);
+	xhttp.open("GET", ONLINE, true);
 	xhttp.send();
 }

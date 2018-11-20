@@ -1,5 +1,5 @@
 <?php
-include '../../../connection.php';
+include '../connection.php';
 /*
 validate_user();
 $connect = mysqli_connect('localhost', 'root', '', 'test');
@@ -9,4 +9,4 @@ function validate_user() {
         header('location: ../../login.php');
 }
 */
-echo "1"; ?>
+?>

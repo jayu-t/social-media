@@ -5,7 +5,7 @@
 		<h5>Stories</h5>
 		<div id="myStory" class="hover-thumb" onclick="showMyStory('myStoryImage')">
 			<span>Your Stroy</span>
-			<img src="jay.jpg" id="myStoryImage" class="img-fluid" data-desc="This is my story">
+			<img src="" id="myStoryImage" class="img-fluid" data-desc="">
 		</div>
 		<span><a href="#" onclick="showStory()">View all</a></span>
 	</div>

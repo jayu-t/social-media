@@ -1,4 +1,15 @@
 <?php
+
+include '../../connection.php';
+/*
+validate_user();
+$connect = mysqli_connect('localhost', 'root', '', 'test');
+
+function validate_user() {
+    if(!isset($_SESSION['userid']))
+        header('location: ../../login.php');
+}
+*/
 /*
 echo "<div id='s$i'>
 			<div id='my-story-image'>jay.jpg</div>

@@ -1,4 +1,14 @@
 <?php 
+include '../../connection.php';
+/*
+validate_user();
+$connect = mysqli_connect('localhost', 'root', '', 'test');
+
+function validate_user() {
+    if(!isset($_SESSION['userid']))
+        header('location: ../../login.php');
+}
+*/
 for ($i=0; $i < 20; $i++) { 
 echo "<div class='request-modal-content border-bottom border-dark hover-arrow'>
 	    <div class='modal-img'>

@@ -9,7 +9,7 @@ function shareStory() {
 	form = document.getElementById('story-form');
 	var request = new XMLHttpRequest();
 	var formData = new FormData(form);
-	request.open('post', 'http://localhost/Projects/MYPROJECT/lib/user/story/upload-story.php', true);
+	request.open('post', UPLOAD_STORY, true);
 	request.send(formData);
 	request.onreadystatechange = function() {
 	    if(request.readyState == 4 && request.status == 200) {
@@ -45,7 +45,7 @@ function getStory() {
 			}
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/story/get-stories.php", true);
+	xhttp.open("GET", GET_STORIES, true);
 	xhttp.send();
 }
 
@@ -54,12 +54,14 @@ function getMyStory() {
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var myObj = JSON.parse(this.responseText);
+			document.getElementById('myStoryImage').setAttribute('src', myObj.storyImage);
+			document.getElementById('myStoryImage').setAttribute('data-desc', myObj.desc);
         	/*console.log('json formated' + myObj);
         	alert(myObj.storyImage);
         	alert(myObj.desc);*/
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/story/get-my-story.php", true);
+	xhttp.open("GET", GET_MY_STORY, true);
 	xhttp.send();
 }
 

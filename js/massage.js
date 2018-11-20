@@ -6,7 +6,7 @@ function getMassageList() {
 			div.innerHTML = this.responseText;
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/massage/massage.php", true);
+	xhttp.open("GET", MASSAGE, true);
 	xhttp.send();
 }
 const maxMassageBox = 5;
@@ -196,7 +196,7 @@ function loadMassages(id, div) {
     		$( div ).prepend( this.responseText );
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/massage/get-massage.php?userid="+id, true);
+	xhttp.open("GET", GET_MASSAGE+"?userid="+id, true);
 	xhttp.send();
 }
 
@@ -212,7 +212,7 @@ function getNewMassage(onlineUserId, div) {
 			div.innerHTML = div.innerHTML + this.responseText;
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/massage/get-new-massage.php?userid="+onlineUserId, true);
+	xhttp.open("GET", GET_NEW_MASSAGE+"?userid="+onlineUserId, true);
 	xhttp.send();
 }
 
@@ -232,7 +232,7 @@ function sendMassage(userId, inputBox, massageBox) {
 			inputBox.value = '';
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/massage/send-massage.php?userid="+userId+"&msg="+msg, true);
+	xhttp.open("GET", SEND_MASSAGE+"?userid="+userId+"&msg="+msg, true);
 	xhttp.send();
 }
 

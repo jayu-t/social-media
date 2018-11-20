@@ -4,9 +4,13 @@ if (!isset($_SESSION['userid']))
 {
 	header ('location: login.php');
 }
+
 $_SESSION['new-msg'] = 1;
 $_SESSION['msg-box-body'] = 1;
 $_SESSION['msg-box'] = 1;
+/*
+include 'path.php';
+echo $INCLUDE_DIR;*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +22,7 @@ $_SESSION['msg-box'] = 1;
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="helper.css">
 
+	<script src="js/file-path.js"></script>
 	<script src="js/posts/post.js"></script>
 	<script src="js/story/story.js"></script>
 	<script src="js/jquery.min.js"></script>
@@ -81,6 +86,5 @@ $_SESSION['msg-box'] = 1;
 	whoIsOnline();
 	getSuggesion();
 </script>
-<!--// TODO: Pust to github-->
 </body>
 </html>

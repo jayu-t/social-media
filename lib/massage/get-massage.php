@@ -1,6 +1,16 @@
 <?php
 session_start();
 
+include '../connection.php';
+/*
+validate_user();
+$connect = mysqli_connect('localhost', 'root', '', 'test');
+
+function validate_user() {
+    if(!isset($_SESSION['userid']))
+        header('location: ../../login.php');
+}
+*/
 $msgBox = $_SESSION["msg-box"];
 $newMsg = $_SESSION["new-msg"];
 $msgBoxBody = $_SESSION['msg-box-body'];
@@ -8,8 +18,6 @@ $msgBoxBody = $_SESSION['msg-box-body'];
 $userid = $_GET['userid'];
 $mainUser = $_SESSION['userid'];
 
-$connect = mysqli_connect('localhost', 'root', '');
-mysqli_select_db($connect, 'test');
 
 $query = "
 	SELECT * FROM massages

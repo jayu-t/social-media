@@ -6,7 +6,7 @@ function getPost() {
 	    	div.innerHTML = this.responseText
 		} 
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/post/get-post.php", true);
+	xhttp.open("GET", GET_POST, true);
 	xhttp.send();
 }
 
@@ -58,7 +58,7 @@ function sharePost() {
 	form = document.getElementById('post-form');
 	var request = new XMLHttpRequest();
 	var formData = new FormData(form);
-	request.open('post', 'http://localhost/Projects/MYPROJECT/lib/user/story/upload-story.php', true);
+	request.open('post', UPLOAD_POST, true);
 	request.send(formData);
 	request.onreadystatechange = function() {
 	    if(request.readyState == 4 && request.status == 200) {
@@ -96,7 +96,7 @@ function like(id, div) {
 			}
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/post/like/give-like.php?post-id=" + postId, true);
+	xhttp.open("GET", GIVE_LIKE+"?post-id=" + postId, true);
 	xhttp.send();
 }
 
@@ -122,7 +122,7 @@ function unlike(id , div)
 			}
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/post/like/unlike.php?post-id=" + postId, true);
+	xhttp.open("GET", UNLIKE+"?post-id=" + postId, true);
 	xhttp.send();
 }
 
@@ -146,7 +146,7 @@ function getPostComment(id) {
 			div.firstChild.innerHTML = num;*/
 		}
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/post/comment/get-post-comment.php?post-id=" + postId, true);
+	xhttp.open("GET", GET_POST_COMMENT+"?post-id=" + postId, true);
 	xhttp.send();
 }
 var commentId = 1;
@@ -175,6 +175,6 @@ function sendComment(commentText) {
 			commentId += 1;
 		} 
 	};
-	xhttp.open("GET", "http://localhost/Projects/MYPROJECT/lib/user/post/comment/send-comment.php?post-id="+postId, true);
+	xhttp.open("GET", SEND_COMMENT+"?post-id="+postId, true);
 	xhttp.send();
 }
